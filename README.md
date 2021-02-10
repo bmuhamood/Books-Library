@@ -9,10 +9,10 @@ This is a project of the Javascript module. It is preceded by the lesson about O
 - [Javascript]
 - [Fontawesome]
 
-# Original Page
+# Sample Screenshot
 
 <p align="center">
-  <img src="./img/Screenshot.png" width="850" title="Screenshot">
+  <img src="Library-Image.jpg" width="850" title="Screenshot">
 </p>
 
 # Live Demo
