@@ -1,32 +1,28 @@
 // Book Class: Prepresents a Books
 class Book {
-    constructor(title, author, isbn) {
-        this.title = title;
-        this.author = author;
-        this.isbn = isbn;
-    }
+  constructor(title, author, isbn) {
+    this.title = title;
+    this.author = author;
+    this.isbn = isbn;
+  }
 }
 
 // UI Class: Handle UI Tasks
 
 class UI {
-    static displayBooks() {
-        const books = Store.getBooks();
-        
+  static displayBooks() {
+    const books = Store.getBooks();
         books.forEach((book) => UI.addBookToList(book));
     }
-    static addBookToList(book) {
-        const list  = document.querySelector('#book-list');
-
-        const row = document.createElement('tr');
-
+  static addBookToList(book) {
+    const list  = document.querySelector('#book-list');
+    const row = document.createElement('tr');
         row.innerHTML = `
-          <td>${book.title}</td>
-          <td>${book.author}</td>
-          <td>${book.isbn}</td>
-          <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
+    <td>${book.title}</td>
+    <td>${book.author}</td>
+    <td>${book.isbn}</td>
+    <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
         `;
-
         list.appendChild(row);
     }
 
