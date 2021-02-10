@@ -1,3 +1,5 @@
+/* eslint-disable no-alert, max-classes-per-file */
+/* eslint-disable no-alert, no-use-before-define */
 // Book Class: Prepresents a Books
 class Book {
   constructor(title, author, isbn) {
@@ -129,3 +131,5 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // show success messages
   UI.showAlert('Book Deleted', 'success');
 });
+/* eslint-enable no-alert, max-classes-per-file */
+/* eslint-enable no-alert, no-use-before-define */
