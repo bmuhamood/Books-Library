@@ -27,7 +27,7 @@ class UI {
       <td>${book.title}</td>
       <td>${book.author}</td>
       <td>${book.isbn}</td>
-      <div class="checkbox text-center"">
+      <div class="checkbox text-center mt-3">
   <label>
     <input type="checkbox" data-toggle="toggle">
   </label>
