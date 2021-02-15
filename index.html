@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/661032a40a.js" crossorigin="anonymous"></script>
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     </head>
     <body>
         <div class="container mt-4">
@@ -27,7 +29,7 @@
                         <label for="isbn">ISBN#</label>
                         <input type="text" id="isbn" class="form-control">
                     </div>
-                    <div>
+                      <div>
                         <input type="submit" value="Add Book" class="btn btn-primary btn-block">
                     </div>
                 </form>
@@ -37,10 +39,11 @@
                             <th>Title</th>
                             <th>Author</th>
                             <th>ISBN#</th>
+                            <th class="text-center">Is Read? (Check if Book is Read <br>and Uncheck if not)</th>
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody id=book-list></tbody>
+                    <tbody id="book-list"></tbody>
                 </table>
         </div>
         <script src="app.js"></script>
