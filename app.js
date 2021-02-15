@@ -1,5 +1,6 @@
 /* eslint-disable no-alert, max-classes-per-file */
 /* eslint-disable no-alert, no-use-before-define */
+/* eslint-disable keyword-spacing */
 // Book Class: Prepresents a Books
 // Book Class: Represents a Book
 class Book {
@@ -88,6 +89,7 @@ class Store {
     books.forEach((book, index) => {
       if(book.isbn === isbn) {
         books.splice(index, 1);
+        UI.showAlert('Book Deleted successful');
       }
     });
 
@@ -140,5 +142,6 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // Show success message
   UI.showAlert('Book Removed', 'success');
 });
+/* eslint-enable keyword-spacing */
 /* eslint-enable no-alert, max-classes-per-file */
 /* eslint-enable no-alert, no-use-before-define */
